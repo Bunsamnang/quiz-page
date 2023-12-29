@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML and CSS Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/3/39/FreeCodeCamp_logo.png"
+        alt=""
+      />
+
+      <h2>HTML and CSS QUIZ</h2>
+      <nav>
+        <ul>
+          <li><a href="#student-info">INFO</a></li>
+          <li><a href="#html-questions">HTML</a></li>
+          <li><a href="#css-questions">CSS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="student-info">
+        <h3>Student Info</h3>
+        <label for="student-name" class="info"
+          ><span>Name:</span><input type="text" id="student-name"
+        /></label>
+        <label for="student-email" class="info"
+          ><span>Email:</span><input type="email" id="student-email" />
+        </label>
+        <label for="student-date-of-birth" class="info"
+          ><span>D.O.B.:</span
+          ><input type="date" name="" id="student-date-of-birth"
+        /></label>
+      </section>
+      <section id="html-questions">
+        <h3>HTML</h3>
+        <p class="question-no">Question #1</p>
+        <p class="question-label">
+          The legend element represents a caption for the content of its parent
+          fieldset element
+        </p>
+        <label for="true" class="answer-option"
+          ><input type="radio" name="true-false" id="true" /><span
+            >True</span
+          ></label
+        >
+        <label for="false" class="answer-option"
+          ><input type="radio" name="true-false" id="false" /><span
+            >False</span
+          ></label
+        >
+
+        <p class="question-no">Question #2</p>
+        <p class="question-label">
+          A label element nesting an input element is required to have a for
+          attribute with the same value as the input's id
+        </p>
+        <label for="true" class="answer-option"
+          ><input type="radio" name="true-false" id="true" /><span
+            >True</span
+          ></label
+        >
+        <label for="false" class="answer-option"
+          ><input type="radio" name="true-false" id="false" /><span
+            >False</span
+          ></label
+        >
+      </section>
+      <section id="css-questions">
+        <h3>CSS</h3>
+        <label for="option">Are you a frontend developer?</label>
+        <select name="" id="option">
+          <option value="">Select an option</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+        <label for="question">Do you have any questions?</label>
+        <textarea
+          name="question"
+          id="question"
+          cols="30"
+          rows="6"
+          placeholder="What is flexbox...?"
+        ></textarea>
+        <button type="submit" value="Send" class="submit-input">Send</button>
+      </section>
+    </main>
+    <footer>
+      <div class="link">
+        <a href="https://www.freecodecamp.org/">freeCodeCamp</a>
+      </div>
+      <div>San Francisco</div>
+      <div>California</div>
+      <div>USA</div>
+    </footer>
+  </body>
+</html>
